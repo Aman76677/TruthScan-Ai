@@ -1,0 +1,73 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover effect with underline animation */
+.navbar ul li a:hover {
+    color: #0077b6;
+}
+
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: #0077b6;
+    transition: width 0.4s;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
