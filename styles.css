@@ -71,3 +71,74 @@ body {
         margin: 10px 0;
     }
 }
+
+/* Enhanced Upload Section Styling */
+.upload-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+}
+
+.upload-section h2 {
+    color: #0077b6;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.upload-section p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hidden File Input */
+input[type="file"] {
+    display: none;
+}
+
+/* Custom File Input Label */
+.upload-label {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.upload-label:hover {
+    background-color: #005f8b;
+}
+
+/* Upload Button */
+#uploadButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#uploadButton:hover {
+    background-color: #218838;
+}
+
+/* Uploaded File Name Display */
+#uploadResult {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TruthScan AI - Navbar</title>
+    <title>TruthScan AI</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,5 +20,26 @@
         </ul>
     </nav>
 
+    <!-- Enhanced Upload Section -->
+    <section class="upload-section">
+        <h2>Upload Your Video for Analysis</h2>
+        <p>Select a video to analyze whether it's real or AI-generated.</p>
+
+        <div class="upload-container">
+            <!-- File Upload Input and Label -->
+            <input type="file" id="videoUpload" accept="video/mp4, video/webm, video/ogg" onchange="displayFileName()">
+            <label for="videoUpload" class="upload-label">
+                <span id="fileLabel">Choose a video file</span>
+            </label>
+
+            <!-- Upload Button -->
+            <button id="uploadButton" onclick="uploadVideo()">Upload Video</button>
+        </div>
+
+        <!-- Display File Name Here -->
+        <div id="uploadResult"></div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
