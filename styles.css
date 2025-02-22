@@ -71,8 +71,12 @@ body {
         margin: 10px 0;
     }
 }
+<<<<<<< HEAD
 
 /* Enhanced Upload Section Styling */
+=======
+/* Upload Section Styling */
+>>>>>>> 05c675f04947791ca2d88c4e307386d5302ca6f5
 .upload-section {
     text-align: center;
     padding: 50px 20px;
@@ -98,12 +102,19 @@ body {
     align-items: center;
 }
 
+<<<<<<< HEAD
 /* Hidden File Input */
+=======
+/* Custom File Input Button */
+>>>>>>> 05c675f04947791ca2d88c4e307386d5302ca6f5
 input[type="file"] {
     display: none;
 }
 
+<<<<<<< HEAD
 /* Custom File Input Label */
+=======
+>>>>>>> 05c675f04947791ca2d88c4e307386d5302ca6f5
 .upload-label {
     background-color: #0077b6;
     color: white;
@@ -118,7 +129,11 @@ input[type="file"] {
     background-color: #005f8b;
 }
 
+<<<<<<< HEAD
 /* Upload Button */
+=======
+/* Upload Button Styling */
+>>>>>>> 05c675f04947791ca2d88c4e307386d5302ca6f5
 #uploadButton {
     background-color: #28a745;
     color: white;
@@ -135,10 +150,17 @@ input[type="file"] {
     background-color: #218838;
 }
 
+<<<<<<< HEAD
 /* Uploaded File Name Display */
+=======
+/* Upload Result Section */
+>>>>>>> 05c675f04947791ca2d88c4e307386d5302ca6f5
 #uploadResult {
     margin-top: 20px;
     font-size: 16px;
     color: #333;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+>>>>>>> 05c675f04947791ca2d88c4e307386d5302ca6f5
 }
