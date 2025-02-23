@@ -4,32 +4,50 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
+    line-height: 1.6;
+}
+/* scroll in Html */
+html{
+    scroll-behavior: smooth;
 }
 
-/* Navbar Styling */
-.navbar {
-    background-color: #ffffff;
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 100;
+    
 }
 
+/* Website Title (TruthScan AI) */
+.logo h1 {
+    font-size: 28px;
+    color: #0077b6;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Bar Styling */
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
 }
 
 .navbar ul li {
     display: inline;
 }
 
+/* Navigation Links */
 .navbar ul li a {
     text-decoration: none;
     color: #333;
@@ -39,7 +57,7 @@ body {
     position: relative;
 }
 
-/* Hover effect with underline animation */
+/* Hover Effect for Links */
 .navbar ul li a:hover {
     color: #0077b6;
 }
@@ -60,42 +78,50 @@ body {
     width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
-    }
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Enhanced Upload Section Styling */
-.upload-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #e0e0e0;
-}
-
-.upload-section h2 {
+.section h2 {
     color: #0077b6;
     font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.section h1 {
+    text-align: center;
+
+}
+
+.section p,
+.section ul,
+.section ol {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Upload Section Styling (Inside Home) */
+.upload-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.upload-container h2 {
+    color: #0077b6;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.upload-section p {
+.upload-container p {
     color: #555;
     font-size: 16px;
-    margin-bottom: 30px;
-}
-
-.upload-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
 /* Hidden File Input */
@@ -118,7 +144,7 @@ input[type="file"] {
     background-color: #005f8b;
 }
 
-/* Upload Button */
+/* Upload Button Styling */
 #uploadButton {
     background-color: #28a745;
     color: white;
@@ -141,4 +167,135 @@ input[type="file"] {
     font-size: 16px;
     color: #333;
     font-weight: bold;
+    text-align: center;
 }
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Responsive Section */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    .upload-container h2 {
+        font-size: 22px;
+    }
+
+    .upload-container p {
+        font-size: 14px;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f9f9f9;
+    padding: 15px 0;  /* Reduced padding to make the footer thinner */
+    text-align: center;
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Content Styling */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20px;  /* Minimal padding for a compact layout */
+}
+
+/* Logo Styling */
+.footer-logo {
+    font-size: 20px;  /* Slightly smaller for a subtle look */
+    color: #0077b6;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;  /* Smaller font for a minimalist look */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #0077b6;
+}
+
+/* Social Media Links */
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: #0077b6;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #005f8b;
+}
+
+/* Footer Bottom Text */
+.footer-bottom {
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 5px;
+    color: #666;
+    font-size: 12px;  /* Smaller font for a thin look */
+    width: 100%;
+}
+
+/* Responsive Footer for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
