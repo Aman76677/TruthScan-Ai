@@ -25,6 +25,7 @@
         </nav>
     </header>
 
+ 
     <!-- Home Section -->
     <section id="home" class="section">
         <h1>Welcome to TruthScan AI</h1>
@@ -45,6 +46,19 @@
 
         <!-- Display File Name and Upload Status -->
         <div id="uploadResult"></div>
+
+        <!-- Analyze Button (Hidden by Default) -->
+         <div class="button-here">
+        <button id="analyzeButton" style="display:none;" onclick="analyzeVideo()">Analyze Video</button>
+         </div>
+
+        <!-- Analysis Process Section with Animation -->
+        <div id="analyzing" class="analyzing" style="display:none;">
+            <p>Analyzing your video...</p>
+        </div>
+
+        <!-- Analysis Result Display -->
+        <div id="result"></div>
     </section>
 
     <!-- How to Use Section -->
@@ -120,5 +134,83 @@
 </footer>
 
     <script src="script.js"></script>
+</body>
+</html>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="section">
+        <h2>How to Use TruthScan AI</h2>
+        <p>TruthScan AI is designed with simplicity and efficiency in mind. Follow these steps to analyze your videos:</p>
+        <ol>
+            <li><strong>Step 1:</strong> Upload your video file using the upload section on the homepage. Supported formats include .mp4, .webm, and .ogg.</li>
+            <li><strong>Step 2:</strong> Once the video is uploaded, our AI model will process it frame by frame, looking for signs of manipulation or deepfake techniques.</li>
+            <li><strong>Step 3:</strong> After the analysis is complete, you'll receive a detailed result indicating whether the video is real or AI-generated, along with key insights about the detection.</li>
+        </ol>
+        <p>Our platform ensures real-time processing and privacy. All video analysis is performed in your browser, meaning your data never leaves your device.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2>Core Features of TruthScan AI</h2>
+        <ul>
+            <li><strong>Real-Time Analysis:</strong> Instantly analyze videos with minimal wait time, thanks to our cutting-edge AI technology.</li>
+            <li><strong>Wide Video Format Support:</strong> Upload videos in common formats such as .mp4, .webm, and .ogg, making it accessible to a broad range of users.</li>
+            <li><strong>Privacy-Focused:</strong> Your video never leaves your device. All analysis is done locally, ensuring your privacy is protected.</li>
+            <li><strong>User-Friendly Interface:</strong> Our intuitive design ensures that anyone can easily upload and analyze videos without technical expertise.</li>
+            <li><strong>Deepfake Detection:</strong> Our AI model is trained to detect even the most advanced deepfakes, ensuring accurate results every time.</li>
+        </ul>
+        <p>With TruthScan AI, you can trust the integrity of the videos you encounter. Whether you're verifying media content or checking the authenticity of viral videos, our platform is here to help.</p>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="section">
+        <h2>Need Help?</h2>
+        <p>If you're experiencing issues with uploading or analyzing your video, or if you have questions about how to use the platform, our support team is here to assist you. Below are some common troubleshooting tips:</p>
+        <ul>
+            <li>Ensure your video is in a supported format (.mp4, .webm, or .ogg).</li>
+            <li>If the video isn't uploading, check the file size and your internet connection.</li>
+            <li>For best results, ensure the video is high-quality and hasn't been heavily compressed.</li>
+        </ul>
+        <p>If these tips don’t solve the issue, feel free to contact us directly for support.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="section">
+        <h2>About TruthScan AI</h2>
+        <p>At TruthScan AI, we believe in the power of truth. With the rapid rise of deepfake technology, it’s more important than ever to have tools that allow people to verify the authenticity of the videos they watch. Our platform is built on cutting-edge AI models, rigorously trained to detect manipulated media, ensuring that you can trust the content you see online.</p>
+        <p>We are a team of AI researchers, developers, and digital media experts committed to combating misinformation and ensuring that truth prevails in the digital world. Our goal is to provide an easy-to-use platform that empowers everyone, from casual users to professionals, to verify the authenticity of video content.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Have questions or need further assistance? We'd love to hear from you. Reach out to us at any time, and we'll do our best to help:</p>
+        <p><strong>Email:</strong> support@truthscan.ai</p>
+        <p><strong>Phone:</strong> +91 7667701112 </p>
+    </section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <p class="footer-logo">TruthScan AI</p>
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-social">
+            <a href="#" target="_blank" aria-label="Twitter">Twitter</a>
+            <a href="#" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="#" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 TruthScan AI. All Rights Reserved.</p>
+    </div>
+</footer>
+
+ <!-- Script Imports -->
+ <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+ <script src="script.js"></script>
 </body>
 </html>
