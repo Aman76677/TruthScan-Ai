@@ -161,6 +161,39 @@ input[type="file"] {
     background-color: #218838;
 }
 
+.analyzing{
+    text-align: center;
+}
+
+
+#analyzeButton button{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+
+}
+
+
+#analyzeButton:hover {
+    background-color: #218838;
+}
+
+#analyzeButton{
+    background-color: #287da7;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    justify-content: center;
+}
+
+
+
 /* Uploaded File Name Display */
 #uploadResult {
     margin-top: 20px;
@@ -298,4 +331,3 @@ input[type="file"] {
         text-align: center;
     }
 }
-
